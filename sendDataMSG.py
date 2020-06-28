@@ -3,9 +3,9 @@ import os
 from twilio.rest import Client
 from scrapeSR import all_data, percentage_active_cases, percentage_total_cases
 
-account_sid = os.environ['TWILIO_ACCOUNT_SID']
-auth_token = os.environ['TWILIO_AUTH_TOKEN']
-my_num = os.environ['MY_NUMBER']
+account_sid = "AC0ba7d1d5bcc1294adccdbd898688326f"
+auth_token = "b7a5ea4c0e51f55ed008a265830c708f"
+my_num = "+5978534188"
 client = Client(account_sid, auth_token)
 
 _message_ = f"""
