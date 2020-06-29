@@ -3,8 +3,8 @@ import os
 from twilio.rest import Client
 from scrapeSR import all_data, percentage_active_cases, percentage_total_cases
 
-account_sid = "AC0ba7d1d5bcc1294adccdbd898688326f"
-auth_token = "b7a5ea4c0e51f55ed008a265830c708f"
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
 recipients = [os.environ["MY_NUMBER"],
               os.environ["MUM's_NUMBER"],
               os.environ["UNCLE's_NUMBER"],
