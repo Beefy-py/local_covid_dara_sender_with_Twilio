@@ -6,3 +6,6 @@ I used twilio to send me the data i scraped from the website to my Whatsapp
 
 # apscheduler
 I used apscheduler to send me the data to my whatsapp every six hours.
+
+## TODO
+  - get the country based on the area code of the number to send data from that specefic country
