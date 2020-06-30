@@ -1,4 +1,5 @@
 import os
+import datetime
 
 from twilio.rest import Client
 from scrapeSR import all_data, percentage_active_cases, percentage_total_cases
@@ -15,7 +16,7 @@ recipients = [os.environ["MY_NUMBER"],
 
 client = Client(account_sid, auth_token)
 _message_ = f"""
-Vandaag zijn er _{all_data['Active Cases:']}_ active COVID-19 gevallen.
+Vandaag {datetime.datetime.strftime(datetime.datetime.today(),'%d %B %Y')} zijn er _{all_data['Active Cases:']}_ active COVID-19 gevallen.
 
 Er zijn in totaal _{all_data['Recovered:']}_ mensen genezen. _{all_data['Deaths:']}_ mensen zijn gestorven.
 
