@@ -1,0 +1,6 @@
+
+# add the following to readMe.md
+-What your program is/does, especially with some nice pretty screenshots.
+-you could include a screenshot of a text that gets sent out.
+-How to run your program/set it up
+    (in your case, the main thing is installing dependencies and messing around with environment variables)
