@@ -2,7 +2,7 @@ import os
 import datetime
 
 from twilio.rest import Client
-from scrapeSR import all_data, percentage_active_cases, percentage_total_cases
+from scrape_sr_cases import all_data, percentage_active_cases, percentage_total_cases
 
 account_sid = os.environ['TWILIO_ACCOUNT_SID']
 auth_token = os.environ['TWILIO_AUTH_TOKEN']
