@@ -1,5 +1,5 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-from sendDataMSG import send_coronavirus_data
+from send_data_msg import send_coronavirus_data
 
 sched = BlockingScheduler()
 
