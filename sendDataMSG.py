@@ -39,4 +39,4 @@ def send_coronavirus_data():
             to=f'whatsapp:{number}'
         )
 
-        print(message.sid)
+       print(f'Send to {message.to} on {message.date_sent}')
